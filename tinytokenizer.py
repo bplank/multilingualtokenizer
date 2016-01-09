@@ -71,8 +71,8 @@ def main():
             print(str(regex.sub(r"\s","",outline)), file=sys.stderr)
 
 
-
-
-
 if __name__=="__main__":
+    if (sys.version_info < (3, 0)):
+        print("needs python 3")
+        exit()
     main()
